@@ -1,0 +1,31 @@
+page = PAGE
+page{
+    typeNum = 0
+    meta {
+        description = Website des Gründungsbüro-Trier
+    }
+    includeCSS {
+        mainstyle = fileadmin/cm2018resources/css/main.css
+    }
+    10 = FLUIDTEMPLATE
+    10 {
+        template = FILE
+        template.file = fileadmin/cm2018resources/templates/root.html
+        variables {
+            nav = HMENU
+            nav {
+                special = directory
+                special.value = 1
+                1 = TMENU
+                1 {
+                    wrap = <ul>|</ul>
+                    NO = 1
+                    NO {
+                        wrapItemAndSub = <li class="main-nav-top-item">|</li>
+                    }
+                }
+            }
+        }
+    }
+}
+
