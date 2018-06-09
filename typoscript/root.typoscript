@@ -12,6 +12,12 @@ page{
         template = FILE
         template.file = fileadmin/cm2018resources/templates/root.html
         variables {
+            logo_picture = TEXT
+            logo_picture = HIER STEHT EIN LOGO
+
+            logo_text = TEXT
+            logo_text = "LOGOTEXT"
+            
             nav = HMENU
             nav {
                 special = directory
@@ -25,6 +31,16 @@ page{
                     }
                 }
             }
+
+            main_content = TEXT
+            main_content = Lorem ipsum
+
+            sidebar_content = TEXT
+            sidebar_content = sidebar: Lorem ipsum
+
+            footer_content = TEXT
+            footer_content = footer: Lorem ipsum
+
         }
     }
 }
