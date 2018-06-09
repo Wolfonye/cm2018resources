@@ -351,6 +351,7 @@ template {
 
 
 body,html{
+    margin: 0;
     font-family: Verdana, sans-serif;
     background-color: var(--main-background-color);
     height: 100%;
@@ -369,23 +370,48 @@ ul{
     }
 
     #header{
-        background-color:red;
+        height: 110pt;
     }
 
     #banner{
-        background-color:green;
+        height: 80pt;
+        display: flex;
+        flex-direction: row;
     }
 
     #logo-picture{
-        height: 100pt;
+        padding: 15pt;
+        left: 20pt;;
+        height: 50pt;
     }
 
     #logo-text{
-        background-color:yellow;
+        padding-top: 15pt;
+        padding-right: 15pt;
+        justify-content: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-header-text{
+        display: inline-block;
+        text-align: right;
+        font-size: 14pt;
+        align-self: flex-end;
+        font-weight: bold;
+    }
+    
+    #secondary-header-text{
+        display: inline-block;
+        text-align: right;
+        align-self: flex-end;
+        font-size: 10pt;
     }
 
     #main-nav{
-        background-color:var(--main-complementary-color);
+        height: 30pt;
+        background-color: var(--secondary-complementary-color);
     }
 
     #main-nav-items{
@@ -393,23 +419,21 @@ ul{
     }
 
     .main-nav-item{
-        display: inline;
     }
 
     #main-content{
         flex: 1;
-        background-color:lightblue;
     }
 
     #aside-1{
-        background-color:lightgreen;
     }
 
     #aside-2{
     }
 
     #footer{
-        
+        height: 40pt;
+        border-top: 1px solid var(--secondary-complementary-color);
         background-color:lightcoral;
     }
 }

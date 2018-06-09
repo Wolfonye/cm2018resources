@@ -7,6 +7,9 @@ page{
     includeCSS {
         mainstyle = fileadmin/cm2018resources/css/main.css
     }
+    includeJS {
+        file1 = fileadmin/cm2018resources/js/jQuery.js
+    }
     10 = FLUIDTEMPLATE
     10 {
         template = FILE
@@ -18,10 +21,15 @@ page{
                 value = <img id="logo-picture" src="fileadmin/cm2018resources/images/Logo.svg" />
             }
 
-            logo_text = TEXT
-            logo_text {
-                value = "Gründungsbüro Trier"
-            } 
+            main_header_text = TEXT
+            main_header_text {
+                value = Gründungsbüro Trier
+            }
+
+            secondary_header_text = TEXT
+            secondary_header_text {
+                value = Information Qualifizierung Beratung
+            }
             
             nav = HMENU
             nav {
