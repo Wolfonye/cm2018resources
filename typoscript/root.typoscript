@@ -15,7 +15,7 @@ page{
 
             logo_picture = TEXT
             logo_picture {
-                value = HIER STEHT EIN LOGO
+                value = <img src="fileadmin/cm2018resources/images/Logo.svg" />
             }
 
             logo_text = TEXT
