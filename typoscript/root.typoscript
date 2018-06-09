@@ -29,10 +29,10 @@ page{
                 special.value = 1
                 1 = TMENU
                 1 {
-                    wrap = <ul>|</ul>
+                    wrap = <ul id="main-nav-items">|</ul>
                     NO = 1
                     NO {
-                        wrapItemAndSub = <li class="main-nav-top-item">|</li>
+                        wrapItemAndSub = <li class="main-nav-item">|</li>
                     }
                 }
             }

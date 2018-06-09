@@ -350,7 +350,6 @@ template {
 }
 
 
-
 body,html{
     background-color: var(--main-background-color);
     height: 100%;
@@ -383,6 +382,14 @@ body,html{
 
 #main-nav{
     background-color: var(--main-complementary-color);
+}
+
+#main-nav-items{
+    list-style-type: none;
+}
+
+.main-nav-item{
+    display: inline;
 }
 
 #main-content{
