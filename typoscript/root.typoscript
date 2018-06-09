@@ -15,12 +15,12 @@ page{
 
             logo_picture = TEXT
             logo_picture {
-                value = <img src="fileadmin/cm2018resources/images/Logo.svg" />
+                value = <img id="logo-picture" src="fileadmin/cm2018resources/images/Logo.svg" />
             }
 
             logo_text = TEXT
             logo_text {
-                value = "LOGOTEXT"
+                value = "Gründungsbüro Trier"
             } 
             
             nav = HMENU
