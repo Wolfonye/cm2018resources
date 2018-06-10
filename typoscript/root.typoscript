@@ -9,6 +9,7 @@ page{
     }
     includeJS {
         file1 = fileadmin/cm2018resources/js/jQuery.js
+        file2 = fileadmin/cm2018resources/js/main.js
     }
     10 = FLUIDTEMPLATE
     10 {
