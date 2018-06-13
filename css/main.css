@@ -383,6 +383,7 @@ ul{
 
     #header{
         height: var(--header-height);
+        background-color: red;
     }
 
     #banner{
