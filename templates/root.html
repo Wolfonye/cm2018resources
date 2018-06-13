@@ -1,26 +1,32 @@
 <div id="pageWrapper">
+
     <header id="header">
-        <div id="logo-picture">
-            <f:format.raw> TODO: </f:format.raw>
-        </div>
-        <div id="logo-text">
-            <f:format.raw> TODO: </f:format.raw>
+        <div id="banner">
+            <f:format.raw> {logo_picture} </f:format.raw>
+            <div id="logo-text">
+                <span id="main-header-text">
+                    <f:format.raw> {main_header_text} </f:format.raw>
+                </span>
+                <span id="secondary-header-text">
+                    <f:format.raw> {secondary_header_text} </f:format.raw>
+                </span>
+            </div>
         </div>
         <nav id="main-nav">
+            <div id="main-nav-trigger">Navigation</div>
             <f:format.raw> {nav} </f:format.raw>
         </nav>
-        <f:format.raw> TODO: subnav (bin unsicher, ob das nicht anders besser geht) </f:format.raw>
+        <!-- wie machen wir das mit dem sub-nav -->
         <!-- TODO: Breadcrumnavigation ja oder nein? -->
-        <div id="main-container">
-            <main>
-                <f:format.raw> TODO: </f:format.raw>
-            </main>
-            <aside id="sidebar">
-                <f:format.raw> TODO: </f:format.raw>
-            </aside>
-        </div>
-        <footer id="footer">
-            <f:format.raw> TODO: </f:format.raw>
-        </footer>
     </header>
+    <main id="main-content">
+        <f:format.raw> {main_content} </f:format.raw>
+    </main>
+    <aside id="aside-1">
+    </aside>
+    <aside id="aside-2">
+    </aside>
+    <footer id="footer">
+        <f:format.raw> {footer_content} </f:format.raw>
+    </footer>
 </div>

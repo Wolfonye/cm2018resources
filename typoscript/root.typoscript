@@ -7,24 +7,69 @@ page{
     includeCSS {
         mainstyle = fileadmin/cm2018resources/css/main.css
     }
+    includeJS {
+        file1 = fileadmin/cm2018resources/js/jQuery.js
+        file2 = fileadmin/cm2018resources/js/main.js
+    }
     10 = FLUIDTEMPLATE
     10 {
         template = FILE
         template.file = fileadmin/cm2018resources/templates/root.html
         variables {
+
+            logo_picture = TEXT
+            logo_picture {
+                value = <img id="logo-picture" src="fileadmin/cm2018resources/images/Logo.svg" />
+            }
+
+            main_header_text = TEXT
+            main_header_text {
+                value = Gründungsbüro Trier
+            }
+
+            secondary_header_text = TEXT
+            secondary_header_text {
+                value = Information Qualifizierung Beratung
+            }
+            
             nav = HMENU
             nav {
                 special = directory
                 special.value = 1
                 1 = TMENU
                 1 {
-                    wrap = <ul>|</ul>
+                    wrap = <ul id="main-nav-items">|</ul>
                     NO = 1
                     NO {
-                        wrapItemAndSub = <li class="main-nav-top-item">|</li>
+                        wrapItemAndSub = <li class="main-nav-item">|</li>
                     }
                 }
             }
+
+            main_content = TEXT
+            main_content {
+                value (
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet.
+                    )
+            }
+
+            sidebar_content = TEXT
+            sidebar_content {
+                value = sidebar: Lorem ipsum
+            }
+
+            footer_content = TEXT
+            footer_content {
+                value = footer: Lorem ipsum
+            }
+
         }
     }
 }
