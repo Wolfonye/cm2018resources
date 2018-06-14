@@ -347,6 +347,10 @@ template {
     --main-background-color: #f7ecd1;
     --main-complementary-color: #6a444f;
     --secondary-complementary-color: #6e6f6e;
+    --nav-color-unselected: #ffffff;
+    --banner-text-color: #585857;
+    --main-text-color: #2a0000;
+    --text-content-backgorund-color: white;
 }
 
 
@@ -354,6 +358,7 @@ body,html{
     margin: 0;
     font-family: Verdana, sans-serif;
     background-color: var(--main-background-color);
+    color: var(--main-text-color);
     height: 100%;
     width: 100%;
 }
@@ -383,7 +388,6 @@ ul{
 
     #header{
         height: var(--header-height);
-        background-color: red;
     }
 
     #banner{
@@ -399,6 +403,7 @@ ul{
     }
 
     #logo-text{
+        color: var(--banner-text-color);
         padding-top: 15pt;
         padding-right: 15pt;
         justify-content: center;
@@ -410,7 +415,7 @@ ul{
     #main-header-text{
         display: inline-block;
         text-align: right;
-        font-size: 14pt;
+        font-size: 16pt;
         align-self: flex-end;
         font-weight: bold;
     }
@@ -428,8 +433,24 @@ ul{
         background-color: var(--secondary-complementary-color);
     }
 
+    #main-nav-trigger{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #nav-trigger-text{
+        padding-left: 15pt;
+        font-size: 14pt;
+        color: var(--nav-color-unselected);
+    }
+
     #main-nav-items{
         display: none;
+        position: relative;
+        background-color: var(--secondary-complementary-color);
+        width: 100%;
+        top: 0pt;
         list-style-type: none;
     }
 
@@ -437,6 +458,8 @@ ul{
     }
 
     #main-content{
+        background-color: var(--text-content-backgorund-color);
+        padding: 15pt;
         flex: 1;
     }
 
@@ -449,8 +472,8 @@ ul{
     #footer{
         flex-shrink: 0;
         height: 40pt;
-        border-top: 1px solid var(--secondary-complementary-color);
-        background-color:lightcoral;
+        border-top: 1px dotted var(--secondary-complementary-color);
+        background-color: var(--text-content-backgorund-color);
     }
 }
 
