@@ -26,7 +26,6 @@ page{
             main_header_text {
                 value = Gründungsbüro Trier
             }
-
             secondary_header_text = TEXT
             secondary_header_text {
                 value = Information Qualifizierung Beratung
@@ -46,18 +45,26 @@ page{
                 }
             }
 
-            main_content = TEXT
+            main_content = CONTENT
             main_content {
-                value (
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet.
-                    )
+                table = tt_content
+                select{
+                    orderBy = sorting
+                    where = colPos=0
+                }
+                renderObj = COA
+                renderObj{
+                    10 = TEXT
+                    10{
+                        field = header
+                        wrap = <h1>|</h1>
+                    }
+                    20 = TEXT
+                    20{          
+                        field = bodytext
+                        wrap = <p>|</p>          
+                    }
+                }
             }
 
             sidebar_content = TEXT
