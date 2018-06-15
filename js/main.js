@@ -4,7 +4,7 @@ $(document).ready(function(){
    
     
     /* Macht das nav-menu-sticky TODO: gucken, wie das bei umsprung über mediaqueries am besten geht. */
-    var $mainNav = $("#main-nav");
+    var $mainNav = $("#nav-wrapper");
     let mainNavHeight = $mainNav.height();
     let bannerHeight = $('#banner').height();
 
