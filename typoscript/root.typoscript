@@ -16,6 +16,9 @@ page{
         template = FILE
         template.file = fileadmin/cm2018resources/templates/root.html
         variables {
+            
+            lib.pageTitle = TEXT
+            lib.pageTitle.data = leveltitle:-1
 
             logo_picture = TEXT
             logo_picture {

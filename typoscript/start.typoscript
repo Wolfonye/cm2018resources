@@ -1,0 +1,11 @@
+page = PAGE
+page{
+    10 = FLUIDTEMPLATE
+    10 {
+        variables {    
+            pagetitle = TEXT
+            pagetitle.value = Start
+        }
+    }
+}
+

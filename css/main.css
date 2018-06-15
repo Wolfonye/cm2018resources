@@ -385,6 +385,7 @@ ul{
 @media (max-width: 2000px) {
     /* sets variables dependent on the screen-size */
     :root{
+        --banner-height: 80pt;
         --header-height: 130pt;
         --navbar-height: 50pt;
     }   
@@ -399,10 +400,6 @@ ul{
         flex-direction: column;
     }
 
-    #header{
-        height: var(--header-height);
-    }
-
     /*
      * The height of the banner is a calculated value "height of the whole header" minus
      * height of the navbar; those to are set depending on the viewport-size.
@@ -410,7 +407,7 @@ ul{
      * horizontal layout possible.
      */
     #banner{
-        height: calc(var(--header-height) - var(--navbar-height));
+        height: var(--banner-height);
         display: flex;
         flex-direction: row;
     }
@@ -452,18 +449,13 @@ ul{
 
     
     #nav-wrapper{
-        height: var(--navbar-height);
         flex-shrink: 0;
         background-color: var(--secondary-complementary-color);
     }
 
-    #main-nav{
-      height: 60%;
-    }
-   
     #sub-nav{
-      height: 40%;
-      background-color: var(--main-complementary-color);
+        min-height: 18pt;
+        background-color: var(--main-complementary-color);
     }
 
     /* 
@@ -477,7 +469,7 @@ ul{
     }
 
     #nav-trigger-text{
-        padding-left: 15pt;
+        padding: 10pt;
         font-size: 14pt;
         color: var(--nav-color-unselected);
     }
@@ -498,12 +490,6 @@ ul{
         background-color: var(--text-content-backgorund-color);
         padding: 15pt;
         flex: 1;
-    }
-
-    #aside-1{
-    }
-
-    #aside-2{
     }
 
     #footer{

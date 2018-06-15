@@ -14,11 +14,14 @@
         </div>
         <nav id="nav-wrapper">
             <div id="main-nav">
-                <div id="main-nav-trigger"><span id="nav-trigger-text">Navigation</span></div>
+                <div id="main-nav-trigger">
+                    <span id="nav-trigger-text"><f:format.raw> {pagetitle} </f:format.raw></span>
+                    <div id="nav-collapse-icon"></div>
+                </div>
                 <f:format.raw> {nav} </f:format.raw>
             </div>
             <div id="sub-nav">
-                
+                <f:format.raw> {subnav} </f:format.raw>
             </div>
         </nav>
         <!-- wie machen wir das mit dem sub-nav -->
