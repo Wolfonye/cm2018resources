@@ -16,9 +16,6 @@ page{
         template = FILE
         template.file = fileadmin/cm2018resources/templates/root.html
         variables {
-            
-            lib.pageTitle = TEXT
-            lib.pageTitle.data = leveltitle:-1
 
             logo_picture = TEXT
             logo_picture {
@@ -48,6 +45,21 @@ page{
                 }
             }
 
+            
+            subnav = HMENU
+            subnav {
+                special = directory
+                special.value.field = uid
+                1 = TMENU
+                1 {
+                    wrap = <ul id="sub-nav-items">|</ul>
+                    NO = 1
+                    NO {
+                        wrapItemAndSub = <li class="sub-nav-item">|</li>
+                    }
+                }
+            }
+            
             main_content = CONTENT
             main_content {
                 table = tt_content
