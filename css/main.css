@@ -461,9 +461,9 @@ ul{
      * Important: height 100% so this element fills up the whole space of its parent-container, this results
      * in simpler relative positioning of the nav-items*/
     #main-nav-trigger{
-        height: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     #nav-trigger-text{
@@ -473,13 +473,20 @@ ul{
     }
 
     #nav-dropdown-container{
-        height: 100%;
+        padding-right: 15pt;
     }
 
     #nav-dropdown-icon{
-        background: url("../images/angle-right.svg");
         width: var(--nav-trigger-text-size);
         height: var(--nav-trigger-text-size);
+    }
+
+    .angle-right{
+        background: url("../images/angle-right.svg");
+    }
+
+    .angle-down{
+        background: url("../images/angle-down.svg");
     }
 
     #main-nav-items{
