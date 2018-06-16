@@ -41,7 +41,7 @@ page{
                 special.value = 1
                 1 = TMENU
                 1 {
-                    wrap = <ul id="main-nav-items">|</ul>
+                    wrap = <ul id="main-nav-items" class="hidden">|</ul>
                     NO = 1
                     NO {
                         wrapItemAndSub = <li class="main-nav-item">|</li>

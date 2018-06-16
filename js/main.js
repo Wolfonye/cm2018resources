@@ -20,12 +20,13 @@ $(document).ready(function(){
 
     $('#main-nav-trigger').on('click', function(){
         let $navItems = $('#main-nav-items');
-        $navItems.toggle(400);
         let $dropdownIcon = $('#nav-dropdown-icon');
         if ($dropdownIcon.hasClass('angle-right')){
+            $navItems.removeClass('hidden');
             $dropdownIcon.removeClass('angle-right');
             $dropdownIcon.addClass('angle-down');
         }else{
+            $navItems.addClass('hidden');
             $dropdownIcon.removeClass('angle-down');
             $dropdownIcon.addClass('angle-right');
         }
