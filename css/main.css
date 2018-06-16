@@ -454,11 +454,6 @@ ul{
         background-color: var(--main-complementary-color);
     }
 
-    #sub-nav{
-        min-height: 18pt;
-        background-color: var(--secondary-complementary-color);
-    }
-
     /* 
      * Rules for the element that wraps the main-nav-trigger-text to make easy text-centering possible. 
      * Important: height 100% so this element fills up the whole space of its parent-container, this results
@@ -476,6 +471,7 @@ ul{
     }
 
     #main-nav-items{
+        display: none;
         position: relative;
         background-color: var(--main-complementary-color);
         width: 100%;
@@ -498,6 +494,31 @@ ul{
     .main-nav-item a:hover{
         transition: background-color 0.3s ease;
         background-color: var(--main-complementary-color-darkened);
+    }
+
+    #sub-nav{
+        min-height: 18pt;
+        background-color: var(--secondary-complementary-color);
+    }
+
+    #sub-nav-items{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0pt;
+        list-style-type: none;
+    }
+
+    .sub-nav-item a{
+        font-size: 10pt;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        padding-left: 10pt;
+        padding-top: 5pt;
+        padding-bottom: 5pt;
+        padding-right: 10pt;
+        text-decoration: none;
+        color: var(--nav-color-unselected);
     }
 
     #main-content{
