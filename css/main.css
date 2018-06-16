@@ -369,6 +369,8 @@ template {
     --banner-height: 80pt;
     --header-height: 130pt;
     --navbar-height: 50pt;
+    --nav-trigger-text-size: 14pt;
+    --nav-trigger-padding: 10pt;
 }
 
 /* 
@@ -528,22 +530,6 @@ ul{
     text-decoration: none;
     color: var(--nav-color-unselected);
 }
-
-
-
-    /* sets variables dependent on the screen-size */
-    :root{
-        --nav-trigger-text-size: 14pt;
-        --nav-trigger-padding: 10pt;
-    }   
-
-    
-
-    
-
-
-
-
 
 #main-content{
     background-color: var(--text-content-backgorund-color);
