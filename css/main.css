@@ -544,7 +544,11 @@ ul{
     background-color: var(--text-content-backgorund-color);
 }
 
-
+#footer-picture{
+    padding: 15pt;
+    left: 20pt;
+    height: 50pt;
+}
 
 
 /* 

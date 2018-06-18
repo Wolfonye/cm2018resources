@@ -93,8 +93,12 @@ page{
 
             footer_content = TEXT
             footer_content {
-                value = footer: Lorem ipsum
+                value = footer: Lorem ipsum 123
             }
+            footer_picture = TEXT
+            footer_picture {
+            value = <img id="footer-picture" src="fileadmin/cm2018resources/images/HS_Logo.png" />
+}
 
         }
     }
