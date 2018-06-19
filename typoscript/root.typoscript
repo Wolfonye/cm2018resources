@@ -93,7 +93,7 @@ page{
 
             footer_content = TEXT
             footer_content {
-            value = © 2018 Gründungsbüro Trier. Alle Rechte vorbehalten. Impressum.
+            value = © 2018 Gründungsbüro Trier. <a href="https://www.uni-trier.de/index.php?id=22091">Alle Rechte vorbehalten</a>. <a href="http://gruenden-trier.de/index.php?id=22">Impressum</a>.
             }
             
             footer_picture = TEXT
