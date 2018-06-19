@@ -93,13 +93,23 @@ page{
 
             footer_content = TEXT
             footer_content {
-                value = footer: Lorem ipsum 123
+            value = © 2018 Gründungsbüro Trier. Alle Rechte vorbehalten. Impressum.
             }
+            
             footer_picture = TEXT
             footer_picture {
-            value = <img id="footer-picture" src="fileadmin/cm2018resources/images/HS_Logo.png" />
-}
+            value = <a href="https://www.hochschule-trier.de/"><img id="footer-picture" src="fileadmin/cm2018resources/images/HS_Logo.png" /></a>
+            }
 
+            footer_picture2 = TEXT
+            footer_picture2 {
+            value = <a href="https://www.uni-trier.de/"><img id="footer-picture2" src="fileadmin/cm2018resources/images/Uni_Trier_Logo.png" /></a>
+            }
+            
+            footer_picture3 = TEXT
+            footer_picture3 {
+            value = Aufgebaut mit Mitteln des: <a href="https://www.efre.rlp.de/"><img id="footer-picture3" src="fileadmin/cm2018resources/images/EFRE_Logo.jpg" /></a>
+}
         }
     }
 }

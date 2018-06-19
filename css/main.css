@@ -550,7 +550,17 @@ ul{
     height: 50pt;
 }
 
+#footer-picture2{
+    padding: 15pt;
+    left: 20pt;
+    height: 50pt;
+}
 
+#footer-picture3{
+    padding: 15pt;
+    right: 20pt;
+    height: 50pt;
+}
 /* 
  * This class will be added to the nav via javascript under certain circumstances to make the
  * nav stick to the upper viewport boundary so it is always visible inside the viewport.
