@@ -1,0 +1,60 @@
+<div id="pageWrapper">
+
+    <header id="header">
+        <div id="banner">
+            <f:format.raw> {logo_picture} </f:format.raw>
+            <div id="logo-text">
+                <span id="main-header-text">
+                    <f:format.raw> {main_header_text} </f:format.raw>
+                </span>
+                <span id="secondary-header-text">
+                    <f:format.raw> {secondary_header_text} </f:format.raw>
+                </span>
+            </div>
+        </div>
+        <nav id="nav-wrapper">
+            <div id="main-nav">
+                <div id="main-nav-trigger">
+                    <span id="nav-trigger-text">
+                        <f:cObject typoscriptObjectPath="lib.pagetitle" />
+                    </span>
+                    <div id="nav-dropdown-container">
+                        <div class="angle-right" id="nav-dropdown-icon"></div>
+                    </div>
+                </div>
+                <f:format.raw> {nav} </f:format.raw>
+            </div>
+            <div id="sub-nav">
+                <f:format.raw> {subnav} </f:format.raw>
+            </div>
+        </nav>
+        <!-- wie machen wir das mit dem sub-nav -->
+        <!-- TODO: Breadcrumnavigation ja oder nein? -->
+    </header>
+    <main id="main-content">
+        <div id="top">
+            <f:format.raw> {top} </f:format.raw>
+        </div>
+        <div id="sub1">
+            <f:format.raw> {sub1} </f:format.raw>
+        </div>
+        <div id="sub2">
+            <f:format.raw> {sub2} </f:format.raw>
+        </div>
+        <div id="sub3">
+            <f:format.raw> {sub3} </f:format.raw>
+        </div>
+    </main>
+    <aside id="aside-1">
+    </aside>
+    <aside id="aside-2">
+    </aside>
+    <footer id="footer">
+        <div id="footer-pictures">
+            <f:format.raw> {footer_picture} </f:format.raw>
+            <f:format.raw> {footer_picture2} </f:format.raw>
+            <f:format.raw> {footer_picture3} </f:format.raw>
+        </div>
+        <f:format.raw> {footer_content} </f:format.raw>
+    </footer>
+</div>

@@ -1,0 +1,90 @@
+page.10 {
+    template.file >
+    template.file = fileadmin/cm2018resources/templates/start.html
+    includeCSS {
+        mainstyle = fileadmin/cm2018resources/css/main.css
+        startPageStyle = fileadmin/cm2018resources/css/start.css
+    }
+    variables{
+        top = CONTENT
+        top {
+            table = tt_content
+            select{
+                orderBy = sorting
+                where = colPos=0
+            }
+            renderObj = COA
+            renderObj{
+                10 = TEXT
+                10{
+                    field = header
+                    wrap = <h3>|</h3>
+                }
+                20 = TEXT
+                20{          
+                    field = bodytext        
+                }
+            }
+        }
+        sub1 = CONTENT
+        sub1 {
+            table = tt_content
+            select {
+                orderBy = sorting
+                where = colPos=1
+            }
+            renderObj = COA
+            renderObj{
+                10 = TEXT
+                10{
+                    field = header
+                    wrap = <h3>|</h3>
+                }
+                20 = TEXT
+                20{
+                    field = bodytext
+                }
+            }
+        }
+        sub2 = CONTENT
+        sub2 {
+            table = tt_content
+            select {
+                orderBy = sorting
+                where = colPos=2
+            }
+            renderObj = COA
+            renderObj{
+                10 = TEXT
+                10{
+                    field = header
+                    wrap = <h3>|</h3>
+                }
+                20 = TEXT
+                20{          
+                    field = bodytext         
+                }
+            }
+        }
+        sub3 = CONTENT
+        sub3 {
+            table = tt_content
+            select {
+                orderBy = sorting
+                where = colPos=3
+            }
+            renderObj = COA
+            renderObj{
+                10 = TEXT
+                10{
+                    field = header
+                    wrap = <h3>|</h3>
+                }
+                20 = TEXT
+                20{          
+                    field = bodytext
+                }
+            }
+        }   
+    }
+}
