@@ -1,0 +1,4 @@
+page.10.variables{
+  main_content >
+  main_content < styles.content.get
+}

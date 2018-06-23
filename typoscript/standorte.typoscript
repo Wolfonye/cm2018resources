@@ -1,0 +1,18 @@
+page.includeJS {
+    file3 = fileadmin/cm2018resources/js/standorte.js
+}
+page.10.variables{
+  main_content >
+  main_content = COA
+  main_content{
+    10 < styles.content.get
+    10{
+      select{
+        where = colPos=0
+        begin = 0
+        max = 1
+      }
+      wrap = <div id="contactMap">|</div>
+    }
+  }
+}
