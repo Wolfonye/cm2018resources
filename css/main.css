@@ -634,6 +634,16 @@ ul{
     #main-nav-trigger{
         display: none;
     }
+    
+}
+
+@media (max-width: 600px) {
+    #footer-pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    }
 }
 
 
