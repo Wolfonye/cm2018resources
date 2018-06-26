@@ -36,31 +36,32 @@ page{
             }
             
             nav = HMENU
-            nav {
+            nav{
                 special = directory
-                special.value = 1
+                special.value = 25  
+                wrap = <ul id="main-nav-items" class="hidden">|</ul>
                 1 = TMENU
-                1 {
-                    wrap = <ul id="main-nav-items" class="hidden">|</ul>
+                1{    
                     NO = 1
-                    NO {
-                        wrapItemAndSub = <li class="main-nav-item">|</li>
-                    }
-                }
-            }
+                    NO.linkWrap = <li class="main-nav-item">|</li>
+                    CUR < .NO
+                    CUR.ATagParams = class="current"            
+                    ACT < .CUR
+                }        
+            }  
 
-            
             subnav = HMENU
-            subnav {
-                special = directory
-                special.value.field = uid
+            subnav{
+                entryLevel = 2
+                stdWrap.wrap = <nav id="subnavigation"><ul id="sub-nav-items">|</ul></nav>
+                stdWrap.required = 1
                 1 = TMENU
-                1 {
-                    wrap = <ul id="sub-nav-items">|</ul>
+                1{
                     NO = 1
-                    NO {
-                        wrapItemAndSub = <li class="sub-nav-item">|</li>
-                    }
+                    NO.linkWrap = <li class="sub-nav-item">|</li>      
+                    CUR < .NO
+                    CUR.ATagParams = class="current"             
+                    ACT < .CUR
                 }
             }
 
