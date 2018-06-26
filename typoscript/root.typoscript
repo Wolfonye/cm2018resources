@@ -38,7 +38,7 @@ page{
             nav = HMENU
             nav{
                 special = directory
-                special.value = 25  
+                special.value = {$page_navigation}  
                 wrap = <ul id="main-nav-items" class="hidden">|</ul>
                 1 = TMENU
                 1{    
