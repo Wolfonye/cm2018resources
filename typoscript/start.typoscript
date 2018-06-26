@@ -16,16 +16,26 @@ page.10 {
                 orderBy = sorting
                 where = colPos=0
             }
-            renderObj = COA
+            renderObj = CASE
             renderObj{
-                10 = TEXT
-                10{
+                key.field = CType
+                header = TEXT
+                header{
                     field = header
-                    wrap = <h3>|</h3>
+                    wrap = <h1><h1>
                 }
-                20 = TEXT
-                20{          
-                    field = bodytext        
+                text = COA
+                text{
+                    10 = TEXT
+                    10{            
+                        field = header
+                        wrap = <h2>|</h2>
+                    }
+                    20 = TEXT
+                    20{          
+                        field = bodytext
+                        wrap = <p>|</p>          
+                    }
                 }
             }
         }
@@ -36,16 +46,26 @@ page.10 {
                 orderBy = sorting
                 where = colPos=1
             }
-            renderObj = COA
+            renderObj = CASE
             renderObj{
-                10 = TEXT
-                10{
+                key.field = CType
+                header = TEXT
+                header{
                     field = header
-                    wrap = <h3>|</h3>
+                    wrap = <h2><h2>
                 }
-                20 = TEXT
-                20{
-                    field = bodytext
+                text = COA
+                text{
+                    10 = TEXT
+                    10{            
+                        field = header
+                        wrap = <h3>|</h3>
+                    }
+                    20 = TEXT
+                    20{          
+                        field = bodytext
+                        wrap = <p>|</p>          
+                    }
                 }
             }
         }
@@ -56,16 +76,26 @@ page.10 {
                 orderBy = sorting
                 where = colPos=2
             }
-            renderObj = COA
+            renderObj = CASE
             renderObj{
-                10 = TEXT
-                10{
+                key.field = CType
+                header = TEXT
+                header{
                     field = header
-                    wrap = <h3>|</h3>
+                    wrap = <h2><h2>
                 }
-                20 = TEXT
-                20{          
-                    field = bodytext         
+                text = COA
+                text{
+                    10 = TEXT
+                    10{            
+                        field = header
+                        wrap = <h3>|</h3>
+                    }
+                    20 = TEXT
+                    20{          
+                        field = bodytext
+                        wrap = <p>|</p>          
+                    }
                 }
             }
         }
@@ -76,16 +106,26 @@ page.10 {
                 orderBy = sorting
                 where = colPos=3
             }
-            renderObj = COA
+            renderObj = CASE
             renderObj{
-                10 = TEXT
-                10{
+                key.field = CType
+                header = TEXT
+                header{
                     field = header
-                    wrap = <h3>|</h3>
+                    wrap = <h2><h2>
                 }
-                20 = TEXT
-                20{          
-                    field = bodytext
+                text = COA
+                text{
+                    10 = TEXT
+                    10{            
+                        field = header
+                        wrap = <h3>|</h3>
+                    }
+                    20 = TEXT
+                    20{          
+                        field = bodytext
+                        wrap = <p>|</p>          
+                    }
                 }
             }
         }   

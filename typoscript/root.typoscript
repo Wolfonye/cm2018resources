@@ -65,23 +65,40 @@ page{
             }
 
             main_content = CONTENT
-            main_content {
+            main_content{
                 table = tt_content
                 select{
                     orderBy = sorting
                     where = colPos=0
-                }
-                renderObj = COA
+                }        
+                renderObj = CASE
                 renderObj{
-                    10 = TEXT
-                    10{
+                    key.field = CType
+                    header = TEXT
+                    header{
                         field = header
-                        wrap = <h1>|</h1>
+                        wrap = <h1><h1>
                     }
-                    20 = TEXT
-                    20{          
-                        field = bodytext
-                        wrap = <p>|</p>          
+                    text = COA
+                    text{
+                        10 = TEXT
+                        10{            
+                            field = header
+                            wrap = <h1>|</h1>
+                        }
+                        20 = TEXT
+                        20{          
+                            field = bodytext
+                            wrap = <p>|</p>          
+                        }
+                    }
+                    image = IMAGE
+                    image {
+                        10 = TEXT
+                        10{            
+                            field = header
+                            wrap = <h3>|</h3>
+                        }
                     }
                 }
             }
@@ -93,23 +110,23 @@ page{
 
             footer_content = TEXT
             footer_content {
-            value = <span id="impressum-text">© 2018 Gründungsbüro Trier. <a href="https://www.uni-trier.de/index.php?id=22091">Alle Rechte vorbehalten</a>. <a href="http://gruenden-trier.de/index.php?id=22">Impressum</a>.</span>
+                value = <span id="impressum-text">© 2018 Gründungsbüro Trier. <a href="https://www.uni-trier.de/index.php?id=22091">Alle Rechte vorbehalten</a>. <a href="http://gruenden-trier.de/index.php?id=22">Impressum</a>.</span>
             }
             
             footer_picture = TEXT
             footer_picture {
-            value = <a href="https://www.hochschule-trier.de/"><img id="footer-picture" src="fileadmin/cm2018resources/images/HS_Logo.png" /></a>
+                value = <a href="https://www.hochschule-trier.de/"><img id="footer-picture" src="fileadmin/cm2018resources/images/HS_Logo.png" /></a>
             }
 
             footer_picture2 = TEXT
             footer_picture2 {
-            value = <a href="https://www.uni-trier.de/"><img id="footer-picture2" src="fileadmin/cm2018resources/images/Uni_Trier_Logo.png" /></a>
+                value = <a href="https://www.uni-trier.de/"><img id="footer-picture2" src="fileadmin/cm2018resources/images/Uni_Trier_Logo.png" /></a>
             }
             
             footer_picture3 = TEXT
             footer_picture3 {
-            value = Aufgebaut mit Mitteln des: <a href="https://www.efre.rlp.de/"><img id="footer-picture3" src="fileadmin/cm2018resources/images/EFRE_Logo.jpg" /></a>
-}
+                    value = Aufgebaut mit Mitteln des: <a href="https://www.efre.rlp.de/"><img id="footer-picture3" src="fileadmin/cm2018resources/images/EFRE_Logo.jpg" /></a>
+            }
         }
     }
 }
