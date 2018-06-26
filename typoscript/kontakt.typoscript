@@ -2,3 +2,7 @@ page.10.variables{
   main_content >
   main_content < styles.content.get
 }
+
+page.includeCSS {
+    file3 = fileadmin/cm2018resources/css/kontakt.css
+}

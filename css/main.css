@@ -360,7 +360,7 @@ template {
 :root {
     --main-background-color: #f7ecd1;
     --main-complementary-color: #6e6f6e;
-    --main-complementary-color-darkened: #525252;
+    --main-complementary-color-darkened: #4b4b4b;
     --secondary-complementary-color: #6a444f;
     --secondary-complementary-color-darkened: #4f323a;
     --nav-color-unselected: #ffffff;

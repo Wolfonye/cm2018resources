@@ -1,0 +1,67 @@
+/*
+ *                                          _               _                           _            _   
+ *                                        (_)             | |                         | |          | |  
+ *  ___  ___ _ __ ___  ___ _ __ ______ ___ _ _______    __| | ___ _ __   ___ _ __   __| | ___ _ __ | |_ 
+ * / __|/ __| '__/ _ \/ _ \ '_ \______/ __| |_  / _ \  / _` |/ _ \ '_ \ / _ \ '_ \ / _` |/ _ \ '_ \| __|
+ * \__ \ (__| | |  __/  __/ | | |     \__ \ |/ /  __/ | (_| |  __/ |_) |  __/ | | | (_| |  __/ | | | |_ 
+ * |___/\___|_|  \___|\___|_| |_|     |___/_/___\___|  \__,_|\___| .__/ \___|_| |_|\__,_|\___|_| |_|\__|
+ *                                                               | |                                    
+ *                                                               |_|                                    
+ */
+#main-content{
+    padding: 0pt;
+}
+
+.frame{
+    padding: 10pt;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    -webkit-box-shadow: 2px 37px 67px 12px rgba(0,0,0,0.18);
+    -moz-box-shadow: 2px 37px 67px 12px rgba(0,0,0,0.18);
+    box-shadow: 2px 37px 67px 12px rgba(0,0,0,0.18);
+}
+
+.powermail_form{
+    width: 100%;
+}
+
+.powermail_fieldset{
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
+.powermail_input, .powermail_textarea{
+    padding-left: 5pt;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+    margin-bottom: 8pt;
+    margin-top: 2pt;
+    border: 2px solid rgb(179, 179, 179);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/*
+ *                                          _               _                           _            _   
+ *                                        (_)             | |                         | |          | |  
+ *  ___  ___ _ __ ___  ___ _ __ ______ ___ _ _______    __| | ___ _ __   ___ _ __   __| | ___ _ __ | |_ 
+ * / __|/ __| '__/ _ \/ _ \ '_ \______/ __| |_  / _ \  / _` |/ _ \ '_ \ / _ \ '_ \ / _` |/ _ \ '_ \| __|
+ * \__ \ (__| | |  __/  __/ | | |     \__ \ |/ /  __/ | (_| |  __/ |_) |  __/ | | | (_| |  __/ | | | |_ 
+ * |___/\___|_|  \___|\___|_| |_|     |___/_/___\___|  \__,_|\___| .__/ \___|_| |_|\__,_|\___|_| |_|\__|
+ *                                                               | |                                    
+ *                                                               |_|                                    
+ */
+
+
+@media(min-width: 480px){
+    .frame{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+}
