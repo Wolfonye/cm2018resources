@@ -658,4 +658,12 @@ ul{
     }
 }
 
+@media (min-width: 1024px){
+   #normal{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 6;   
+   }
+}
 
