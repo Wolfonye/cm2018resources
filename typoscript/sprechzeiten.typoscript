@@ -1,0 +1,25 @@
+page.includeCSS {
+    file3 = fileadmin/cm2018resources/CSS/sprechzeiten.css
+}
+
+page.10.template.file >
+page.10.template.file = fileadmin/cm2018resources/templates/sprechzeiten.html
+
+page.10.variables{
+  top >
+  top < styles.content.get
+  top {
+      select{
+        where = colPos=0
+      }
+  }
+
+  sub > 
+  sub < styles.content.get
+  sub {
+      select{
+          where = colPos=1
+      }
+      wrap = <div class="location">|</div>
+  }
+}

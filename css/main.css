@@ -432,6 +432,10 @@ ul{
     flex-direction: column;
 }
 
+#header{
+    z-index: 1000;
+}
+
 
 #main-header-text{
     display: inline-block;
@@ -555,7 +559,7 @@ ul{
 
 #footer{
     flex-shrink: 0;
-    border-top: 1px dotted var(--main-complementary-color);
+    border-top: 2px dotted var(--main-complementary-color);
     background-color: var(--text-content-backgorund-color);
     display: flex;
     flex-direction: column;
@@ -659,11 +663,18 @@ ul{
 }
 
 @media (min-width: 1024px){
-   #normal{
+    #main-content, #footer{
+        box-sizing: border-box;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #normal{
       grid-column-start: 2;
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 6;   
-   }
+    }
 }
 
