@@ -65,42 +65,10 @@ page{
                 }
             }
 
-            main_content = CONTENT
+            main_content < styles.content.get
             main_content{
-                table = tt_content
                 select{
-                    orderBy = sorting
                     where = colPos=0
-                }        
-                renderObj = CASE
-                renderObj{
-                    key.field = CType
-                    header = TEXT
-                    header{
-                        field = header
-                        wrap = <h1><h1>
-                    }
-                    text = COA
-                    text{
-                        10 = TEXT
-                        10{            
-                            field = header
-                            wrap = <h1>|</h1>
-                        }
-                        20 = TEXT
-                        20{          
-                            field = bodytext
-                            wrap = <p>|</p>          
-                        }
-                    }
-                    image = IMAGE
-                    image {
-                        10 = TEXT
-                        10{            
-                            field = header
-                            wrap = <h3>|</h3>
-                        }
-                    }
                 }
             }
 
