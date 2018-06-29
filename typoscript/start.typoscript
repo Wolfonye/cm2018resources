@@ -9,125 +9,26 @@ page.10 {
     template.file >
     template.file = fileadmin/cm2018resources/templates/start.html
     variables{
-        top = CONTENT
-        top {
-            table = tt_content
-            select{
-                orderBy = sorting
-                where = colPos=0
-            }
-            renderObj = CASE
-            renderObj{
-                key.field = CType
-                header = TEXT
-                header{
-                    field = header
-                    wrap = <h1><h1>
-                }
-                text = COA
-                text{
-                    10 = TEXT
-                    10{            
-                        field = header
-                        wrap = <h2>|</h2>
-                    }
-                    20 = TEXT
-                    20{          
-                        field = bodytext
-                        wrap = <p>|</p>          
-                    }
-                }
-            }
-        }
-        sub1 = CONTENT
+        top < styles.content.get
+        
+        sub1 < styles.content.get
         sub1 {
-            table = tt_content
             select {
-                orderBy = sorting
                 where = colPos=1
             }
-            renderObj = CASE
-            renderObj{
-                key.field = CType
-                header = TEXT
-                header{
-                    field = header
-                    wrap = <h2><h2>
-                }
-                text = COA
-                text{
-                    10 = TEXT
-                    10{            
-                        field = header
-                        wrap = <h3>|</h3>
-                    }
-                    20 = TEXT
-                    20{          
-                        field = bodytext
-                        wrap = <p>|</p>          
-                    }
-                }
-            }
         }
-        sub2 = CONTENT
+
+        sub2 < styles.content.get
         sub2 {
-            table = tt_content
             select {
-                orderBy = sorting
                 where = colPos=2
             }
-            renderObj = CASE
-            renderObj{
-                key.field = CType
-                header = TEXT
-                header{
-                    field = header
-                    wrap = <h2><h2>
-                }
-                text = COA
-                text{
-                    10 = TEXT
-                    10{            
-                        field = header
-                        wrap = <h3>|</h3>
-                    }
-                    20 = TEXT
-                    20{          
-                        field = bodytext
-                        wrap = <p>|</p>          
-                    }
-                }
-            }
         }
-        sub3 = CONTENT
+
+        sub3 < styles.content.get
         sub3 {
-            table = tt_content
             select {
-                orderBy = sorting
                 where = colPos=3
             }
-            renderObj = CASE
-            renderObj{
-                key.field = CType
-                header = TEXT
-                header{
-                    field = header
-                    wrap = <h2><h2>
-                }
-                text = COA
-                text{
-                    10 = TEXT
-                    10{            
-                        field = header
-                        wrap = <h3>|</h3>
-                    }
-                    20 = TEXT
-                    20{          
-                        field = bodytext
-                        wrap = <p>|</p>          
-                    }
-                }
-            }
-        }   
-    }
+        }
 }
