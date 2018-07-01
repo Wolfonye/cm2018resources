@@ -662,10 +662,10 @@ ul{
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1180px){
     #main-content, #footer{
         box-sizing: border-box;
-        width: 70%;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
