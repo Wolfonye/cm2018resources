@@ -9,7 +9,9 @@
  *                                                               |_|                                    
  */
 
-
+img.img-dummy{
+    display: none;
+}
 
 #top{
     grid-column-start: 1;

@@ -356,6 +356,12 @@ template {
  *                                                                       | |                                    
  *                                                                       |_|                                  
  */
+
+
+a {
+    color: black;
+}
+
 /* Declaration of basic variables for main and secondary colours, font-colours/sizes a.s.o. */
 :root {
     --main-background-color: #f7ecd1;
